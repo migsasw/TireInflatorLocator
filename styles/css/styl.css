@@ -1,0 +1,27 @@
+.footer-header {
+    text-align: left;
+    padding-bottom: 5%;
+}
+.footer-content {
+    display: flex;
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+    .links {
+        display: flex;
+        flex: 3;
+        li {
+            width: 20%;
+            text-align: left;
+        }
+    }
+    .svg {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/css/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <title>tila</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="navigation">
+                <div class="mobile-navigation">
+                    <a href="#hero" class="link" id="logo">tila</a>
+                    <ul class="mn">
+                        <li><a href="#hero"><span class="material-icons">home</span></a></li>
+                        <li><a href="#map"><span class="material-icons">location_on</span></a></li>
+                        <li><a href="#info"><span class="material-icons">info</span></a></li>
+                    </ul>
+                </div>
+                <div class="desktop-navigation">
+                    <ul class="dn">
+                        <li><a href="#hero" class="link" id="logo">tila</a></li>
+                    </ul>
+                    <ul class="dn">
+                        <li id="page"><a href="#hero" class="link">Home</a></li>
+                        <li id="page"><a href="#map" class="link">Maps</a></li>
+                        <li id="page"><a href="#info" class="link">Help</a></li>
+                    </ul>
+                </div>
+        </header>
+        <section class="hero" id="hero">
+            <div class="hero-section">
+                <div class="content">
+                    <h1>Helping you find <br> the nearest tire inflator.</h1>
+                    <p>The tire inflator locator makes life easy,
+                        by finding you the nearest inflato
+                    </p>
+                    <div class="button"> <a href="#" class="btn" id="try-it-today">Try it today!</a>
+                    </div>
+                </div>
+            </div>
+            <img src="/images/tires-and-wheels.png" data-aos="fade-down" alt="tire clipart image">
+        </section>
+
+        <div id="map"></div>
+        <script src="/map.js"></script>
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzsbpjoYgKfQ0p8SKo8Flb4rqUouXxV0E&callback=initMap&libraries=&v=weekly"
+            async>
+            </script>
+
+        <section class="info" id="info">
+            <h1>Information</h1>
+            <div class="cards">
+                <div class="card" data-aos="fade-down" id="one">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                </div>
+                <div class="card" data-aos="fade-down" data-aos-delay="200" id="two">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                </div>
+                <div class="card" data-aos="fade-down" data-aos-delay="400" id="three">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-body">
+                <h3 class="footer-header">.tire inflator locator</h3>
+                <div class="footer-content">
+                    <ul class="links">
+                        <li>contact</li>
+                        <li>about</li>
+                        <li>terms & conditions</li>
+                    </ul>
+                    <ul class="svg">
+                        <li><img src="/images/facebook.svg"></li>
+                        <li><img src="/images/instagram.svg"></li>
+                        <li><img src="/images/twitter.svg"></li>
+                        <li><img src="/images/youtube.svg"></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-tag">Miguel A Ward | 2021</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 2000
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/index.js"></script>
+    </body>
+
+</html>
